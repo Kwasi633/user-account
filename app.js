@@ -25,17 +25,8 @@ app.use((error, req, res, next) => {
     res.json({ message: error.message || 'An unknown error occured!'})
 })
 
-// mongoose
-//     .connect('mongodb+srv://SafePathAdmin:f9wlMkIbGmnCnBtu@cluster0.keud0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-//     .then(() => {
-//         app.listen(6000)
-//     })
-//     .catch(err => {
-//         console.log(err)
-//     });
-
 mongoose
-    .connect('mongodb+srv://backendAdmin:SDACTDBTQAbQrit6@cluster0.4epjd.mongodb.net/user-account?retryWrites=true&w=majority&appName=Cluster0')
+    .connect('mongodb+srv://<username>:<password>6@cluster0.4epjd.mongodb.net/user-account?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         app.listen(5050)
     })
