@@ -1,0 +1,5 @@
+Signup with enail
+http://localhost:5000/api/users/signup
+
+Login with email
+http://localhost:5000/api/users/login
